@@ -1,4 +1,5 @@
 <?php
+if($_POST){
 $error_mail=false;
 $error_nombre=false;
 if(($_POST["nombre"])=="" || ($_POST["nombre"])==null ){
@@ -22,10 +23,10 @@ echo "<br>";
 if ($error_mail==false && $error_nombre==false){
 echo "Correcto";
 $almacenar="{Email: ". $_POST["email"] .", Nombre: ".$_POST["nombre"]."}\n";
-header('Location: http://127.0.0.1/practicaDH/php_clase_06_04/happy.html');
+header('Location: http://127.0.0.1/practicaDH/php_clase_06_04/clase 06_04//happy.html');
 file_put_contents("prueba.txt",file_get_contents("almacenamiento.txt").$almacenar);
 }
-
+}
 ?>
 
 <!DOCTYPE html>
