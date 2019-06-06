@@ -1,0 +1,13 @@
+foreach ($_POST as $variable) {
+   echo $variable;
+   echo "<br";
+
+ }
+ ?>
+ <?php
+ echo "<br><br><br><br>";
+var_dump ($_SERVER);
+var_dump ($_FILES);
+var_dump ($_REQUEST);
+var_dump ($_SESSION);
+var_dump ($_COOKIE);
